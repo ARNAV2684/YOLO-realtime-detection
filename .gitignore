@@ -32,12 +32,11 @@ ENV/
 *.swo
 
 # Project specific
-output_images/
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.mp4
+# Ignore contents but keep folders
+saved_images/*
+!saved_images/.gitkeep
+output_images/*
+!output_images/.gitkeep
 
 # YOLO model files
 *.pt
