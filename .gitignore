@@ -35,8 +35,8 @@ ENV/
 # Ignore contents but keep folders
 saved_images/*
 !saved_images/.gitkeep
-output_images/*
-!output_images/.gitkeep
+# output_images/*
+# !output_images/.gitkeep
 
 # YOLO model files
 *.pt
@@ -44,6 +44,4 @@ yolo_detector/*.pt
 
 # Keep the images folder but ignore its contents
 images/*
-!images/.gitkeep
-output_images/*
-!output_images/.gitkeep 
+!images/.gitkeep 
