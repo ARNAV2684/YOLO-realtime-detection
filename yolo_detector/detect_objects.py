@@ -10,8 +10,8 @@ import numpy as np
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Path to save captured frames
-IMAGES_FOLDER = os.path.join(PROJECT_ROOT, 'images')
-os.makedirs(IMAGES_FOLDER, exist_ok=True)
+SAVED_IMAGES_FOLDER = os.path.join(PROJECT_ROOT, 'saved_images')
+os.makedirs(SAVED_IMAGES_FOLDER, exist_ok=True)
 
 # Path to save the output images
 OUTPUT_FOLDER = os.path.join(PROJECT_ROOT, 'output_images')
@@ -129,7 +129,7 @@ try:
             output_filename = f"OP_frame_{timestamp}.jpg"
             
             # Save original frame
-            frame_path = os.path.join(IMAGES_FOLDER, frame_filename)
+            frame_path = os.path.join(SAVED_IMAGES_FOLDER, frame_filename)
             cv2.imwrite(frame_path, frame)
             print(f"\nSaved original frame to: {frame_path}")
             

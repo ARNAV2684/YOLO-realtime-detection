@@ -20,7 +20,7 @@ pip install ultralytics opencv-python numpy
 
 ## Usage
 
-1. Place your test images in the `images` folder
+1. Place your test images in the `saved_images` folder
 2. Run the detection script:
 ```bash
 python yolo_detector/detect_objects.py
@@ -38,11 +38,11 @@ python yolo_detector/detect_objects.py
 ## Project Structure
 
 ```
-├── images/                 # Input images folder
-├── output_images/         # Output images folder
-├── yolo_detector/         # Main code directory
-│   └── detect_objects.py  # Main detection script
-└── README.md             # Project documentation
+├── saved_images/           # Input/saved images folder
+├── output_images/          # Output images folder
+├── yolo_detector/          # Main code directory
+│   └── detect_objects.py   # Main detection script
+└── README.md               # Project documentation
 ```
 
 ## Configuration
