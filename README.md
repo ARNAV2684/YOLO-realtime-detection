@@ -11,10 +11,6 @@ This project implements real-time object detection using YOLOv8 and OpenCV. It c
 - Configurable confidence threshold
 - Support for multiple object classes
 
-## Example Output
-
-![Object Detection Example](output_images/OP_frame_20250602_164249.jpg)
-*Example of real-time object detection with custom bounding boxes*
 
 ## Requirements
 
