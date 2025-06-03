@@ -1,3 +1,6 @@
+
+https://github.com/user-attachments/assets/9458ff7a-793d-4017-88ae-f249c4aff2dc
+
 # Real-time Object Detection with YOLOv8
 
 This project implements real-time object detection using YOLOv8 and OpenCV. It captures video from your webcam, performs object detection, and displays the results in real-time with customizable bounding boxes.
