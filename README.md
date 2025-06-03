@@ -11,6 +11,11 @@ This project implements real-time object detection using YOLOv8 and OpenCV. It c
 - Configurable confidence threshold
 - Support for multiple object classes
 
+## Example Output
+
+![Object Detection Example](output_images/OP_frame_20250602_164249.jpg)
+*Example of real-time object detection with custom bounding boxes*
+
 ## Requirements
 
 ```bash
@@ -24,6 +29,11 @@ pip install ultralytics opencv-python numpy
 ```bash
 python yolo_detector/detect_objects.py
 ```
+
+### Model Download
+- The YOLO model will be automatically downloaded when you first run the script
+- This ensures you always have the latest version of the model
+- The model will be saved in the Ultralytics cache directory
 
 ### Controls
 - Press 's' to save the current frame
@@ -43,6 +53,11 @@ python yolo_detector/detect_objects.py
 
 You can modify the following parameters in `detect_objects.py`:
 - `MODEL_NAME`: Choose different YOLOv8 models
+  - 'yolov8n.pt' - Nano model (fastest)
+  - 'yolov8s.pt' - Small model
+  - 'yolov8m.pt' - Medium model
+  - 'yolov8l.pt' - Large model
+  - 'yolov8x.pt' - XLarge model (most accurate)
 - `CONFIDENCE_THRESHOLD`: Detection confidence threshold
 - `IMAGE_SIZE`: Input image size for detection
 
